@@ -1,5 +1,6 @@
 body {
-    font-family: 'Rubik Doodle Shadow', sans-serif;
+    font-family: 'Arial Black', sans-serif;
+    font-size: large;
     margin: 0;
     padding: 0;
     background-color: #ea5d5d;
@@ -16,7 +17,7 @@ body {
 }
 
 h1 {
-    font-family: 'Rubik Doodle Shadow', sans-serif;
+    font-family: 'Arial Black', sans-serif;
     color: red;
 }
 
