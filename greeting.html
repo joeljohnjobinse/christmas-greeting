@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Greeting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <h1>Merry Christmas, <span id="userName"></span>!</h1>
+        <img id="userImage" alt="User Image">
+        <p>Christmas... It's the best time of the year!</p>
+        <p>I hope you have a wonderful Christmas! And an incredible new year ahead!</p>
+        <p>And remember, you mean to me just as much as Christmas means to me!</p>
+        <p>(you're my everything, basically *wink wink*)</p>
+        <p>May your days be merry and bright!</p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        var userName = decodeURIComponent(getParameterByName('name'));
+        document.getElementById('userName').innerText = userName;
+
+        // Set the source of the user image based on the user's name
+        var userImageSrc = userName.toLowerCase() + '.jpg';
+
+        // Set the source of the user image dynamically
+        document.getElementById('userImage').src = userImageSrc;
+
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+    </script>
+</body>
+</html>

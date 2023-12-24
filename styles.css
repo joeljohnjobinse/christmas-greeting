@@ -1,0 +1,47 @@
+body {
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ea5d5d;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #f1b3e3;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px;
+    background-color: #5bc0de;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #31b0d5;
+}
